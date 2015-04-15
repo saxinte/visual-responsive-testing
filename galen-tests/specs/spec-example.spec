@@ -1,19 +1,23 @@
 ==================================================
 main-header             css           .main-header
+texts-container         css           .texts-container
+share-section           css           .share-section
+col-left                css           .col-left
+col-right               css           .col-right
 ==================================================
-
-@ small
--------------------
-main-header
-    height: 65 to 67px
 
 @ medium
 -------------------
 main-header
     height: 71 to 73px
 
+share-section
+    right of: texts-container 10px
+
 @ large
 -------------------
 main-header
-    height: 81 to 83px
     centered horizontally inside: screen
+
+col-left
+    aligned horizontally top: col-right

@@ -145,12 +145,6 @@
 ---------------------------------------*/
 @media all and (min-width:43.75em) and (max-width:49.9375em){
 
-    /* Main Header
-    ---------------------------------------*/
-    .main-header-desc {
-        font-size:100%;
-    }
-
     /* Article Section
     ---------------------------------------*/
     .article-section .texts-container {

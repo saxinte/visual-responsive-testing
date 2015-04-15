@@ -13,9 +13,25 @@ module.exports = function(grunt) {
             }
         },
 
-        // Report folder clean
+        // Reports folder clean
         clean: {
-            reports: ['galen-tests/reports']
+            fail: ['galen-tests/reports/fail'],
+            success: ['galen-tests/reports/success']
+        },
+
+        // Shortcut bash commands
+        shell: {
+            options: {
+                execOptions: {
+                    cwd: './galen-tests/tests/'
+                }
+            },
+            fail: {
+                command: 'galen test test-example.test --htmlreport ../reports/fail/ -DpageName="page-fail"'
+            },
+            success: {
+                command: 'galen test test-example.test --htmlreport ../reports/success/ -DpageName="page-success"'
+            }
         }
 
     });
@@ -23,9 +39,11 @@ module.exports = function(grunt) {
     // Tasks load
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-shell');
 
     // Tasks
     grunt.registerTask('default', ['connect:dev']);
-    grunt.registerTask('cleanup', ['clean']);
+    grunt.registerTask('galen-fail', ['clean:fail', 'shell:fail']);
+    grunt.registerTask('galen-success', ['clean:success', 'shell:success']);
 
 };

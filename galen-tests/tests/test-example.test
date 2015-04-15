@@ -9,10 +9,9 @@
     | firefox   | Mozilla Firefox |
 
 @@ Parameterized
-    | viewport  | size    |
-    | small     | 300x500 |
-    | medium    | 700x500 |
-    | large     | 800x600 |
+    | viewport  | size     |
+    | medium    | 768x1024 |
+    | large     | 1280x800 |
 
 ${page_name}.html ${viewport} viewport ${full_name}
     selenium ${browser} ${page_url} ${size}
