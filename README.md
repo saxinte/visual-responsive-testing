@@ -5,7 +5,7 @@ This repo contains two simple HTML templates with the same layout (app/html/). I
 This test is just a study, you can find all the Tests Specifications here: galen-test/specs and galen-test/tests
 
 ## Testing environnement setup
-First, make sure you have [Node.js], [Grunt] and [Galen] installed globally.
+First, make sure you have [Node.js], [Grunt] and [Galen] 1.6+ installed globally.
 
 Download the .zip file from GitHub and extract it. Then install all node dependencies using:
 ```sh
