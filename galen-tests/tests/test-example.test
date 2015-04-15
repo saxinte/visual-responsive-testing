@@ -1,0 +1,19 @@
+@@ Set
+    page_name           ${pageName}
+    page_url            http://localhost:1337/html/${page_name}.html
+    page_spec_url       ../specs/spec-example.spec
+
+@@ Parameterized
+    | browser   | full_name       |
+   #| chrome    | Google Chrome   |
+    | firefox   | Mozilla Firefox |
+
+@@ Parameterized
+    | viewport  | size    |
+    | small     | 300x500 |
+    | medium    | 700x500 |
+    | large     | 800x600 |
+
+${page_name}.html ${viewport} viewport ${full_name}
+    selenium ${browser} ${page_url} ${size}
+        check ${page_spec_url} --include "${viewport}"

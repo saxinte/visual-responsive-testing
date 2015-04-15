@@ -1,0 +1,12 @@
+{
+  "name": "visual-responsive-testing",
+  "version": "1.0.0",
+  "description": "Automated tests for responsive layouts",
+  "main": "Gruntfile.js",
+  "author": "Sebastien Axinte",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-connect": "^0.10.1"
+  }
+}

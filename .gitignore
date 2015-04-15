@@ -1,0 +1,9 @@
+#MAC
+.DS_Store
+
+#NODE
+node_modules
+npm-debug.log
+
+#GALEN
+reports
