@@ -16,7 +16,7 @@ grunt server
 > A place is needed by Galen for testing pages. I use a server created with Grunt for my personal facilities but you can host them where you want and update the "test-example.test" file. (galen-tests/tests)
 
 ### Running Tests
-All reports are located in galen-tests/reports after running tests.
+All reports are located in galen-tests/reports after running tests. Galen generates a lot of stuff but just open the "report.html" file to access to the report result.
 
 #### First Test: page-fail.html
 Open a new tab and run the following comand to run tests on "page-fail.html":
