@@ -43,6 +43,8 @@ module.exports = function(grunt) {
 
     // Tasks
     grunt.registerTask('default', ['connect:dev']);
+
+    grunt.registerTask('server', ['connect:dev']);
     grunt.registerTask('galen-fail', ['clean:fail', 'shell:fail']);
     grunt.registerTask('galen-success', ['clean:success', 'shell:success']);
 
