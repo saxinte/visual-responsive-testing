@@ -1,6 +1,8 @@
-# Visual Responsive Testing using Galen
+# Visual Responsive Testing Study using Galen
 
-This repo contains two simple HTML templates with the same layout. It's responsive ready. The first layout is intentionally broken and the second layout works has expected. The goal is to run automated tests on these pages and have a final report. All documentation about Galen can be found on http://galenframework.com
+This repo contains two simple HTML templates with the same layout (app/html/). It's responsive ready. The first layout is intentionally broken and the second layout works has expected. The goal is to run automated tests on these pages and have a final report. All documentation about Galen can be found on http://galenframework.com
+
+This test is just a study, you can find all the Tests Specifications here: galen-test/specs and galen-test/tests
 
 ## Testing environnement setup
 First, make sure you have [Node.js], [Grunt] and [Galen] installed globally.
