@@ -19,7 +19,7 @@ grunt server
 All reports are located in galen-tests/reports after running tests.
 
 #### First Test: page-fail.html
-Run the following comand to run tests on "page-fail.html":
+Open a new tab and run the following comand to run tests on "page-fail.html":
 ```sh
 grunt galen-fail
 ```
