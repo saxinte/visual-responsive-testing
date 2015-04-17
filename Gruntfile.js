@@ -1,5 +1,8 @@
 module.exports = function(grunt) {
 
+    // Tasks load
+    require('load-grunt-tasks')(grunt);
+
     grunt.initConfig({
 
         // HTTP Server
@@ -15,8 +18,8 @@ module.exports = function(grunt) {
 
         // Reports folder clean
         clean: {
-            fail: ['galen-tests/reports/fail'],
-            success: ['galen-tests/reports/success']
+            fail: ['./galen-tests/reports/fail'],
+            success: ['./galen-tests/reports/success']
         },
 
         // Shortcut bash commands
@@ -35,11 +38,6 @@ module.exports = function(grunt) {
         }
 
     });
-
-    // Tasks load
-    grunt.loadNpmTasks('grunt-contrib-connect');
-    grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-shell');
 
     // Tasks
     grunt.registerTask('default', ['connect:dev']);
